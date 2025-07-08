@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -35,6 +37,84 @@ header {
     cursor: pointer;
 }
 
+#content {
+    min-height: 90vh;
+}
 
 
+footer {
+    background-color: #333333;
+    padding: 15px 15px 0 15px;
+    font-size: 14px;
+}
+
+.restaurant-footer {
+    display: grid;
+    grid-template-columns: 30% 20% 30%;
+    justify-content: center;
+    align-items: stretch;
+    color: #ffffff;
+    column-gap: 100px;
+    margin: 80px 50px 30px 50px;
+}
+
+.restaurant-footer > div {
+    padding: 10px;
+}
+
+.restaurant-desc img{
+    width: 120px;
+    margin: 0;
+}
+
+.restaurant-desc {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time-phone {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.timing {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.time-phone h3, .restaurant-map h3 {
+    color: #ffffff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff;
+    width: 60%;
+}
+
+.restaurant-map {
+    grid-column: 3/4;
+}
+
+@media (max-width: 780px) {
+    .restaurant-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .time-phone {
+        max-width: 300px;
+    }
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
