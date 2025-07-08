@@ -1,7 +1,6 @@
 import homepage from "./pages/homepage";
 import about from "./pages/about";
 import menu from "./pages/menu";
-import contact from "./pages/contact";
 import reserve from "./pages/reserve";
 import "./styles/index.css"
 
@@ -9,7 +8,6 @@ const states = {
     HOMEPAGE: "homepage",
     MENU: "menu",
     ABOUT: "about",
-    CONTACT: "contact",
     RESERVE: "reserve"
 }
 
@@ -26,9 +24,6 @@ function render(state) {
                 break;
             case states.ABOUT:
                 about(content)
-                break;
-            case states.CONTACT:
-                contact(content)
                 break;
             case states.MENU:
                 menu(content)
@@ -49,7 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById("homeBtn").addEventListener('click', () => render(states.HOMEPAGE));
     document.getElementById("menuBtn").addEventListener('click', () => render(states.MENU));
     document.getElementById("aboutBtn").addEventListener('click', () => render(states.ABOUT));
-    document.getElementById("contactBtn").addEventListener('click', () => render(states.CONTACT));
     document.getElementById("reserveBtn").addEventListener('click', () => render(states.RESERVE));
 });
 
