@@ -1,0 +1,147 @@
+
+.home-sect {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.slide-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 70vh;
+}
+
+.home-info {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: 35px;
+    color: #cf1010;
+    margin: 0;
+}
+
+.tagline > span {
+    font-weight: bold;
+    color: #288e3e;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-buttons > button {
+    font-size: 16px;
+    border: 1px solid #288e3e;
+    padding: 15px 32px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.2s;
+}
+
+.home-buttons > button:hover {
+    cursor: pointer;
+}
+
+.menu-button {
+    background-color: #288e3e;
+    color: #ffffff;
+    box-shadow: 1px 1px 3px #288e3e;
+}
+
+.menu-button:hover {
+    /* color: #288e3e;
+    background-color: #ffffff; */
+    box-shadow: 1px 1px 15px #288e3e;
+}
+
+.reserve-button {
+    background-color: #ffffff;
+    border-color: #ffffff !important;
+    color: #cf1010;
+}
+
+.reserve-button:hover {
+    border-color: #cf1010 !important;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    margin-right: 50px;
+    display: flex;
+    padding-right: 50px;
+    flex-direction: column;
+    border-right: 3px solid black;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .service:last-child {
+    border-right: 0px;
+}
+
+.service > p {
+    margin: 6px 0 0 0;
+}
+
+.service > img {
+    height: 50px;
+}
+
+.slideshow {
+  position: relative;
+  border-radius: 12px;
+}
+
+.slide-img {
+  display: block;
+  object-fit: cover;
+}
+
+/* Buttons */
+.slideshow-button {
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  border: none;
+  height: 50px;
+  background-color: #ffffff;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev-button {
+  right: 25%;
+  border-top-left-radius: 5px;
+}
+
+.next-button {
+  right: 0;
+  border-top-right-radius: 5px;
+}
+
+.slideshow-button img {
+    width: 50px;
+}
+
+
