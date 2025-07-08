@@ -38,7 +38,7 @@
 }
 
 .home-buttons > button {
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid #288e3e;
     padding: 15px 32px;
     border-radius: 15px;
@@ -74,18 +74,19 @@
 .services {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .service {
-    margin-right: 50px;
+    margin-right: 5%;
     display: flex;
-    padding-right: 50px;
+    padding-right: 5%;
     flex-direction: column;
     border-right: 3px solid black;
     border-radius: 2px;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
 }
 
 .services .service:last-child {
@@ -97,7 +98,7 @@
 }
 
 .service > img {
-    height: 50px;
+    height: 30px;
 }
 
 .slideshow {
@@ -144,4 +145,73 @@
     width: 50px;
 }
 
+@media (max-width: 1024px) {
+    .home-buttons > button {
+        font-size: 12px;
+        padding: 8px 24px;
+        border-radius: 8px;
+    }
+    .service > img {
+        width: 25px;
+    }
+    .service > p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-sect {
+        padding: 20px;
+        margin: 0 40px;
+    }
+    .home-info {
+        width: 80vw;
+        height: fit-content;
+        margin: 50px 0;
+        gap: 50px;
+    }
+    .home-buttons {
+        justify-content: flex-start;
+    }
+    .home-buttons > button {
+        margin-right: 5px;
+    }
+    .tagline {
+        font-size: 25px;
+        max-width: 60%;
+    }
+    .slide-img {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .home-sect {
+        flex-direction: column;
+        align-items: flex-start;
+        height: max-content;
+    }
+    .slide-img {
+        height: 80vh;
+        width: 100%;
+    }
+    .tagline {
+        max-width: 100%;
+        font-size: 30px;
+    }
+    .home-buttons > button {
+        margin-right: 5px;
+        padding: 8px 16px;
+    }
+    .service > img {
+        width: 20px;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .slide-img {
+        height: 60vh;
+    }
+}
 
