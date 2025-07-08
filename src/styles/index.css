@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10%;
 }
 
 .logo > img {
@@ -22,7 +23,7 @@ header {
 
 .buttons {
     display: flex;
-    width: 100%;
+    gap: 50px;
     justify-content: space-evenly;
 }
 
