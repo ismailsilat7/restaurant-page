@@ -13,6 +13,7 @@
 .menu-sect > h1 {
     margin: 0;
     color: #cf1010;
+    font-size: 45px;
 }
 
 .menu-sect > p {
@@ -139,6 +140,10 @@
 @media (max-width: 768px) {
   .menu-sect {
     margin: 40px 10px;
+  }
+
+  .menu-sect h1 {
+    font-size: 30px;
   }
 
   .menu-sect > p {
